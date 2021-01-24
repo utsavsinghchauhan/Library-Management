@@ -1,0 +1,33 @@
+<html>
+<head>
+<style>
+H1
+{
+  color:black;
+  background-color:grey;
+  border:2px solid yellow;
+  text-align:center;
+}
+</style>
+<title>New Book Entry</title>
+</head>
+<body>
+<h1>New Book Entry Portal</h1>
+<form action ="Dashboard.html", method="post", encrtype="multipart/form-data">
+<fieldset>
+<legend align="left">New Book Form</legend>
+<table>
+<tr><td>Book Title</td>
+<td><input type="text" placeholder="Enter Book Name Here" required="required" name="bookname" id="bookname"></td></tr>
+<tr><td>Book ISBN</td>
+<td><input type="text" placeholder="Enter Book ISBN Here" required="required" name="bookisbn" id="bookisbn"></td></tr>
+<tr><td>Book Author</td>
+<td><input type="text" placeholder="Enter Book Author Name Here" required="required" name="bookauthor" id="bookauthor"></td></tr>
+<tr><td>Book Adition</td>
+<td><input type="text" placeholder="Enter Book Adition Here" required="required" name="bookadition" id="bookadition"></td></tr>
+<tr>
+<td><input type="submit" value="Add"></td>
+<td><input type="reset" value="Refresh"></td></tr>
+</fieldset>
+</form>
+</body>

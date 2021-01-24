@@ -1,0 +1,45 @@
+<html>
+<head>
+<style>
+H1
+{
+  color:black;
+  background-color:grey;
+  border:2px solid yellow;
+  text-align:center;
+}
+</style>
+<title>Assign Book</title>
+</head>
+<body>
+<h1>New Book Assign Portal</h1>
+<form action ="Dashboard.html", method="post", encrtype="multipart/form-data">
+<fieldset>
+<legend align="left">New Book Form</legend>
+<table>
+<tr><td>Select Request Type</td>
+<td><select name="s1">
+<option value="Select">Select</option>
+<optgroup label="College">
+<option value="Faculty">Falculty</option>
+<option value="Student">Student</option>
+</optgroup>
+</select>
+</td>
+</tr>
+<tr><td>ID</td>
+<td><input type="text" placeholder="Enter ID" required="required" name="userid" id="userid"></td></tr>
+<tr><td>Book Name</td>
+<td><input type="text" placeholder="Enter Book Name Here" required="required" name="bookname" id="bookname"></td></tr>
+<tr><td>Book ISBN</td>
+<td><input type="text" placeholder="Enter Book ISBN Here" required="required" name="bookisbn" id="bookisbn"></td></tr>
+<tr><td>Book Author</td>
+<td><input type="text" placeholder="Enter Book Author Name Here" required="required" name="bookauthor" id="bookauthor"></td></tr>
+<tr><td>Book Adition</td>
+<td><input type="text" placeholder="Enter Book Adition Here" required="required" name="bookadition" id="bookadition"></td></tr>
+<tr>
+<td><input type="submit" value="Assign"></td>
+<td><input type="reset" value="Refresh"></td></tr>
+</fieldset>
+</form>
+</body>
