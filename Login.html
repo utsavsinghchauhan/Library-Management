@@ -17,16 +17,46 @@
         border:2px solid black;
         text-align:center;
       }
+	  form.login {
+	    border: 2px solid red;
+		padding: 50px;
+		border-radius: 10px;
+		width: 500px;
+	  }
+	  form.login label {
+	    width: 50px;
+	  }
+	  form.login div.lower_section input[type="submit"] {
+	    border-radius: 5px;
+		border-color: green;
+	    background-color: blue;
+		color: white;
+	    width: 100%;
+	  }
+	  form div.upper_section label {
+	    width: 20%;
+	  }
+	  form div.upper_section input {
+	    width:80%;
+	  }
+	  form div.upper_section {
+	    width: 100%;
+	  } 
     </style>
   </head>
   <body>
     <h1>Login</h1>
-    <form action="Dashboard.html" method="get">
-      <label for="fname">Login Id:</label>
-      <input type="text" id="loginid" name="loginid"><br><br>
-      <label for="lname">Password:</label>
-      <input type="text" id="password" name="password"><br><br>
-      <input type="submit" value="Submit">
+    <form name="Login" class="login" action="dashboard.html" method="post">
+	  <div class="upper_section">
+	    <label for="login_id">Login Id:</label>
+        <input type="text" id="loginid" name="loginid">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+	  </div>
+	  <div class="lower_section">
+	    <input type="submit" value="Submit">
+	  </div>
+      
     </form>
   </body>
 </html>
